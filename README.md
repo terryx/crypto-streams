@@ -6,8 +6,9 @@ Stream public market data from cryptocurrency exchange
 ## Getting started
 ```
 npm install
-npm run gdax
+npm run gdax -- --env=dev
 ```
 
 ### Tips
-Adjust amount in the `config.js` to watch for different total price
+Adjust amount in the `config.js` to watch for different total price according
+to environment setting
