@@ -39,22 +39,22 @@ const prd = {
     alertAmount: 1000000
   },
   okex: {
-    BTC: {
+    btc: {
       amount: 10000000
     },
-    LTC: {
+    ltc: {
       amount: 1000000
     },
-    ETH: {
+    eth: {
       amount: 1000000
     },
-    ETC: {
+    etc: {
       amount: 100000
     },
-    BCH: {
+    bch: {
       amount: 100000
     },
-    XRP: {
+    xrp: {
       amount: 100000
     }
   }
