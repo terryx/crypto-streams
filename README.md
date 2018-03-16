@@ -1,12 +1,9 @@
 ## Crypto streams
-Stream public market data from cryptocurrency exchange
+A simple utility library for streaming public market data from cryptocurrency exchanges
 
 ## Getting started
-```bash
-npm install
-```
+`npm install --save crypto-streams`
 
-#### Examples
 ```javascript
 const streams = require('crypto-streams')
 const subject = streams.usd('btc')
