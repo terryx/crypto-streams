@@ -6,5 +6,16 @@ Stream public market data from cryptocurrency exchange
 npm install
 ```
 
----
-Please check test case for implementation
+#### Examples
+```javascript
+const streams = require('crypto-streams')
+const subject = streams.usd('btc')
+
+subject.connect()
+
+subject
+  .subscribe(
+    (res) => console.log(res),
+    (err) => console.log(err.message)
+  )
+```
