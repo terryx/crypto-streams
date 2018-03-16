@@ -2,6 +2,9 @@
 
 version: 2
 jobs:
+  test:
+    post:
+      - bash <(curl -s https://codecov.io/bash
   build:
     docker:
       - image: circleci/node:8.9.4
@@ -27,6 +30,3 @@ jobs:
 
       # run tests!
       - run: npm test
-test:
-  post:
-    - bash <(curl -s https://codecov.io/bash

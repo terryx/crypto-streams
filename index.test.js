@@ -1,10 +1,21 @@
 const test = require('ava')
 const index = require('./index')
 
-const subject = index.usd('btc')
-subject.connect()
+test('stream BTC - USD', t => {
+  const subject = index.usd('btc')
+  subject.connect()
 
-test('stream BTCUSD', t => {
+  return subject
+    .first()
+    .map(res => {
+      t.is(res === Number.NaN, false)
+    })
+})
+
+test('stream BTC - USDT', t => {
+  const subject = index.usdt('btc')
+  subject.connect()
+
   return subject
     .first()
     .map(res => {
